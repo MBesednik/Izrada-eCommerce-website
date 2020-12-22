@@ -15,61 +15,40 @@
         rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>MM Store</title>
+    <title>Proizvodi | MM Store</title>
 </head>
 
 <body>
-    <div class="header">
-        <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <a href="index.html"><img src="images/logo.png" width="125px" alt=""></a>
-                </div>
-                <nav>
-                    <ul id="MenuItems">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="proizvodi.html">Products</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">Account</a></li>
-                    </ul>
-                </nav>
-                <img src="images/cart.png" width="30px" height="30px" alt="">
-                <img src="images/menu.png" class="menu-icon" onclick="menuToggle()">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px" alt=""></a>
             </div>
-            <div class="row">
-                <div class="col-2">
-                    <h1>Give Your Workout <br>A New Style!</h1>
-                    <p>Success isn't always about greatness. It's about consistency. Consistent <br>hard work gains
-                        success.
-                        Greatness will come.</p>
-                    <a href="" class="btn">Explore Now</a>
-                </div>
-                <div class="col-2">
-                    <img src="/images/image1.png" alt="">
-                </div>
-            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="proizvodi.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Account</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px" alt="">
+            <img src="images/menu.png" class="menu-icon" onclick="menuToggle()">
         </div>
     </div>
-    <!-- Featured categories -->
-    <div class="categories">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-3">
-                    <img src="images/category-1.jpg" alt="">
-                </div>
-                <div class="col-3">
-                    <img src="images/category-2.jpg" alt="">
-                </div>
-                <div class="col-3">
-                    <img src="images/category-3.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Featured products -->
+
     <div class="small-container">
-        <h2 class="title">Featured Products</h2>
+        <div class="row row-2">
+            <h2>All Products</h2>
+            <select name="" id="">
+                <option value="">Default Shorting</option>
+                <option value="">Short by price</option>
+                <option value="">Short by popularity</option>
+                <option value="">Short by rating</option>
+                <option value="">Short by sale</option>
+            </select>
+        </div>
         <div class="row">
             <div class="col-4">
                 <img src="images/product-1.jpg" alt="">
@@ -120,7 +99,6 @@
                 <p>$50.00</p>
             </div>
         </div>
-        <h2 class="title">Latest Products</h2>
         <div class="row">
             <div class="col-4">
                 <img src="images/product-5.jpg" alt="">
@@ -221,98 +199,11 @@
                 <p>$50.00</p>
             </div>
         </div>
-    </div>
-    <!-- Offer -->
-    <div class="offer">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-2">
-                    <img src="images/exclusive.png" class="offer-img" alt="">
-                </div>
-                <div class="col-2">
-                    <p>Exclusively Available on RedStore</p>
-                    <h1>Smart Band 4</h1>
-                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum autem, similique rem enim
-                        doloribus at repudiandae perferendis quis officiis quam quasi, reprehenderit dolorem voluptas
-                        nobis soluta. Explicabo maxime quos.</small>
-                    <a href="" class="btn">Buy Now</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Testimontial -->
-    <div class="testimontial">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio odio ducimus vel qui earum
-                        deserunt unde eum mollitia, dolorum labore. Debitis amet laboriosam ad cumque adipisci molestias
-                        enim fuga asperiores!</p>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <img src="images/user-1.png" alt="">
-                    <h3>Sean Parker</h3>
-                </div>
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio odio ducimus vel qui earum
-                        deserunt unde eum mollitia, dolorum labore. Debitis amet laboriosam ad cumque adipisci molestias
-                        enim fuga asperiores!</p>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <img src="images/user-2.png" alt="">
-                    <h3>Sean Parker</h3>
-                </div>
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio odio ducimus vel qui earum
-                        deserunt unde eum mollitia, dolorum labore. Debitis amet laboriosam ad cumque adipisci molestias
-                        enim fuga asperiores!</p>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <img src="images/user-3.png" alt="">
-                    <h3>Sean Parker</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Brands -->
-    <div class="brands">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-5">
-                    <img src="images/logo-godrej.png" alt="">
-                </div>
-                <div class="col-5">
-                    <img src="images/logo-oppo.png" alt="">
-                </div>
-                <div class="col-5">
-                    <img src="images/logo-coca-cola.png" alt="">
-                </div>
-                <div class="col-5">
-                    <img src="images/logo-paypal.png" alt="">
-                </div>
-                <div class="col-5">
-                    <img src="images/logo-philips.png" alt="">
-                </div>
-            </div>
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
         </div>
     </div>
     <!-- Footer -->
