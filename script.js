@@ -1,3 +1,4 @@
+
 let MenuItems = document.getElementById("MenuItems");
 
 MenuItems.style.maxHeight = "0px";
@@ -25,15 +26,17 @@ smallImg[3].onclick = function () {
     productImg.src = smallImg[3].src;
 }
 // js za prijavu i registraciju
-let loginForm = document.getElementsById("loginForm");
-let regForm = document.getElementsById("regForm");
-let indicator = document.getElementsById("indicator");
+var loginForm = document.getElementsById("log");
+var regForm = document.getElementsById("reg");
+var indicator = document.getElementsById("ind");
 
 function register() {
-    regForm.style.transform = "translateX(0px)";
-    loginForm.style.transform = "translateX(0px)";
+    reg.style.transform = "translateX(0px)";
+    log.style.transform = "translateX(0px)";
+    indicator.style.transform = "translateX(100px)";
 }
 function login() {
-    regForm.style.transform = "translateX(300px)";
-    loginForm.style.transform = "translateX(300px)";
+    reg.style.transform = "translateX(300px)";
+    log.style.transform = "translateX(300px)";
+    ind.style.transform = "translateX(0px)";
 }
