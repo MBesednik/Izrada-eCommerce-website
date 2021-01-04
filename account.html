@@ -47,12 +47,13 @@
                 <div class="col-2">
                     <div class="form-container">
                         <div class="form-btn">
-                            <span>Login</span>
-                            <span>Register</span>
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="indicator">
                         </div>
 
                         <!-- Prijava -->
-                        <form>
+                        <form id="loginForm">
                             <input type="text" placeholder="Username">
                             <input type="password" placeholder="Password">
                             <button type="submit" class="btn">Login</button>
@@ -60,7 +61,7 @@
                         </form>
 
                         <!-- Registracija -->
-                        <form>
+                        <form id="regForm">
                             <input type="text" placeholder="Username">
                             <input type="email" placeholder="Email">
                             <input type="password" placeholder="Password">

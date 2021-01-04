@@ -24,3 +24,16 @@ smallImg[2].onclick = function () {
 smallImg[3].onclick = function () {
     productImg.src = smallImg[3].src;
 }
+// js za prijavu i registraciju
+let loginForm = document.getElementsById("loginForm");
+let regForm = document.getElementsById("regForm");
+let indicator = document.getElementsById("indicator");
+
+function register() {
+    regForm.style.transform = "translateX(0px)";
+    loginForm.style.transform = "translateX(0px)";
+}
+function login() {
+    regForm.style.transform = "translateX(300px)";
+    loginForm.style.transform = "translateX(300px)";
+}
