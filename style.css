@@ -280,6 +280,16 @@ select:focus{
 .single-product{
     margin-top: 80px;  
 }
+.single-product .napred-nazad a img{
+    color: #ff523b;
+}
+.single-product .col-2 .napred-nazad{
+    position: relative;
+    top: -25px;
+}
+.single-product .col-2 .napred-nazad .next{
+    margin-left: 10px;
+}
 .single-product .col-2 img{
     padding: 0;   
 }
@@ -319,34 +329,6 @@ justify-content: space-between;
     flex-basis: 24%;
     cursor: pointer;
 }
-/* media query for menu */
-@media only screen and (max-width: 800px){
-    .row{
-        text-align: center;
-    }
-    nav ul{
-        position: absolute;
-        top: 70px;
-        left: 0;
-        background: #333;
-        width: 100%;
-        overflow: hidden;
-        transition: max-height 0.5s;
-    }
-    nav ul li{
-        display: block;
-        margin-right: 50px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    nav ul li a{
-        color: #fff;
-    }
-    .menu-icon{
-        display: block;
-        cursor: pointer;
-    }
-}
 /* account stranica */
 .account-page{
     padding: 50px 0;
@@ -361,6 +343,7 @@ justify-content: space-between;
     padding: 20px 0;
     margin: auto;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 .form-container span{
     font-weight: bold;
@@ -414,13 +397,41 @@ form a{
     transform: translateX(100px);
     transition: transform 1s;
 }
-/* media query za manje od 600  */
-@media only screen and (max-width: 600px){
+/* media query for menu */
+@media only screen and (max-width: 800px){
     .row{
         text-align: center;
     }
-    .col-2, .col-3, .col-4{
-        flex-basis: 100%;
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+/* media query za manje od 1000 na detaljima proizvoda */
+@media only screen and (max-width: 1000px){
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3{
+        flex-basis: 85%;
     }
     .single-product .row{
         text-align: left;
@@ -431,5 +442,18 @@ form a{
     .single-product h1{
         font-size: 26px;
         line-height: 32px;
+    }
+    .single-product .col-2 .napred-nazad{
+        display: none;
+    }
+}
+@media only screen and (max-width: 700px){
+    .col-2, .col-3{
+        flex-basis: 100%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .col-4{
+        flex-basis: 100%;
     }
 }
