@@ -52,5 +52,5 @@ function cartNumber() {
     localStorage.setItem('cartNumber', 1);
 }
 
-// ---------------------------------------
+// košarica
 

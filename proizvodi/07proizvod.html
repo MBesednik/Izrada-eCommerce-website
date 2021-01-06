@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title Bar Icon -->
-    <link rel="icon" type="image/icon" href="images/MB.ico">
+    <link rel="icon" type="image/icon" href="../images/MB.ico">
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
@@ -21,19 +21,19 @@
     <div class="container">
         <div class="navbar">
             <div class="logo">
-                <a href="index.html"><img src="images/logo.png" width="125px" alt=""></a>
+                <a href="../index.html"><img src="../images/logo.png" width="125px" alt=""></a>
             </div>
             <nav>
                 <ul id="MenuItems">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="proizvodi.html">Products</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../proizvodi.html">Products</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Contact</a></li>
-                    <li><a href="account.html">Account</a></li>
+                    <li><a href="../account.html">Account</a></li>
                 </ul>
             </nav>
-            <img src="images/cart.png" width="30px" height="30px" alt="">
-            <img src="images/menu.png" class="menu-icon" onclick="menuToggle()">
+            <img src="../images/cart.png" width="30px" height="30px" alt="">
+            <img src="../images/menu.png" class="menu-icon" onclick="menuToggle()">
         </div>
     </div>
     <!-- detalji pojedinačnog proizvoda -->
@@ -41,19 +41,18 @@
     <div class="small container single-product">
         <div class="row">
             <div class="col-2">
-                <img src="images/01proizvod.png" width="100%" alt="" id="productImg">
+                <img src="../images/proizvodi/071proizvod.jpg" width="100%" alt="" id="productImg">
                 <div class="small-img-row">
                     <div class="small-img-col">
-                        <img src="images/01proizvod.png" width="100%" alt="" class="small-img">
+                        <img src="../images/proizvodi/071proizvod.jpg" width="100%" alt="" class="small-img">
                     </div>
                     <div class="small-img-col">
-                        <img src="images/02proizvod.png" width="100%" alt="" class="small-img">
+                        <img src="../images/proizvodi/072proizvod.jpg" width="100%" alt="" class="small-img">
                     </div>
                     <div class="small-img-col">
-                        <img src="images/03proizvod.png" width="100%" alt="" class="small-img">
+                        <img src="../images/proizvodi/073proizvod.jpg" width="100%" alt="" class="small-img">
                     </div>
                     <div class="small-img-col">
-                        <img src="images/04proizvod.png" width="100%" alt="" class="small-img">
                     </div>
                 </div>
 
@@ -61,11 +60,16 @@
 
             </div>
             <div class="col-2">
-                <p>Home / T-Shirt</p>
-                <h1>Red Printed T-Shirt by HRX</h1>
-                <h4>$50.00</h4>
+                <div class="napred-nazad">
+                    <a href="06proizvod.html"><i class="fa fa-arrow-circle-left fa-4x"></i></a>
+                    <a href="08proizvod.html"><i class="fa fa-arrow-circle-right fa-4x"></i></a>
+                </div>
+                <p><a href="../index.html">Početna</a> / <a href="../proizvodi.html">Proizvodi</a> / <a
+                        href="07proizvod.html">REHBAND steznik za koljeno CAMO 5mm Rx</a></p>
+                <h1>REHBAND steznik za koljeno CAMO 5mm Rx</h1>
+                <h4>229.00 kn</h4>
                 <select>
-                    <option>Select Size</option>
+                    <option>Odaberi veličinu</option>
                     <option>XXL</option>
                     <option>XL</option>
                     <option>Large</option>
@@ -73,12 +77,14 @@
                     <option>Small</option>
                 </select>
                 <input type="number" value="1">
-                <a href="" class="add-cart btn">Add To Cart</a>
-                <h3>Product Details <i class="fa fa-indent"></i></h3>
+                <a href="" class="add-cart btn">Dodaj u košaricu</a>
+                <h3>Opis proizvoda<i class="fa fa-indent"></i></h3>
                 <br>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat inventore porro perferendis
-                    accusantium? Dicta obcaecati exercitationem facere laudantium? Ducimus dolores possimus eaque
-                    pariatur mollitia molestiae repudiandae, maxime beatae nostrum nobis.</p>
+                <p>Ovaj steznik debljine 5mm pogoduje raznovrsnim treninzima gdje vam je potrebna agilnost i podrška.
+                    Konstrukcija proizvoda je patentirana i pruža anatomski fit. Oblik steznika dopušta da prati pokrete
+                    koje radi vaše tijelo i pomaže na putu do snage umjesto ozljeda. Stabilnost nudi mentalni i fizički
+                    osjećaj sigurnosti. Kompresija pomaže kod sprečavanja ozljeda i povećava memoriju mišića da pamti
+                    pravilne pokrete. </p>
             </div>
         </div>
     </div>
@@ -86,17 +92,19 @@
     <!-- naslov -->
     <div class="small-container">
         <div class="row row-2">
-            <h2>Related Products</h2>
-            <p>View more</p>
+            <h2>Popularni proizvodi</h2>
+            <a href="../proizvodi.html">
+                <p>Pogledaj sve</p>
+            </a>
         </div>
     </div>
 
     <!-- proizvodi -->
 
-    <div class="small-container">
+    <div class="small-container reviews">
         <div class="row">
             <div class="col-4">
-                <img src="images/product-9.jpg" alt="">
+                <img src="../images/product-9.jpg" alt="">
                 <h4>Red Printed T-Shirt</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -108,7 +116,7 @@
                 <p>$50.00</p>
             </div>
             <div class="col-4">
-                <img src="images/product-10.jpg" alt="">
+                <img src="../images/product-10.jpg" alt="">
                 <h4>Red Printed T-Shirt</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -120,7 +128,7 @@
                 <p>$50.00</p>
             </div>
             <div class="col-4">
-                <img src="images/product-11.jpg" alt="">
+                <img src="../images/product-11.jpg" alt="">
                 <h4>Red Printed T-Shirt</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -132,7 +140,7 @@
                 <p>$50.00</p>
             </div>
             <div class="col-4">
-                <img src="images/product-12.jpg" alt="">
+                <img src="../images/product-12.jpg" alt="">
                 <h4>Red Printed T-Shirt</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -150,28 +158,28 @@
         <div class="container">
             <div class="row">
                 <div class="footer-col-1">
-                    <h3>Download Our App</h3>
-                    <p>Download App for Android and iso mobile phone.</p>
+                    <h3>Skinite našu aplikaciju</h3>
+                    <p>Dostupno za Android i iso mobilne uređaje.</p>
                     <div class="app-logo">
-                        <img src="images/play-store.png" alt="">
-                        <img src="images/app-store.png" alt="">
+                        <a href="https://play.google.com/store/movies"><img src="../images/play-store.png" alt=""></a>
+                        <a href="https://www.apple.com/hr/ios/app-store/"><img src="../images/app-store.png" alt=""></a>
                     </div>
                 </div>
                 <div class="footer-col-2">
-                    <img src="images/logo-white.png" alt="">
+                    <img src="../images/logo-white.png" alt="">
                     <p>Our Purpose Is To Sustainably Make the Pleasure and Benefit of Sports Accessible to the Many.</p>
                 </div>
                 <div class="footer-col-3">
-                    <h3>Useful Links</h3>
+                    <h3>Korisni linkovi:</h3>
                     <ul>
-                        <li>Coupons</li>
-                        <li>Blog Post</li>
-                        <li>Return Policy</li>
-                        <li>Join Affiliate</li>
+                        <li>Kuponi</li>
+                        <li>Blog</li>
+                        <li>Povrat proizvoda</li>
+                        <li>Pretplati se</li>
                     </ul>
                 </div>
                 <div class="footer-col-4">
-                    <h3>Follow us</h3>
+                    <h3>Zapratite nas:</h3>
                     <ul>
                         <li>Facebook</li>
                         <li>Twitter</li>
@@ -185,7 +193,7 @@
         </div>
     </footer>
     <!-- JavaScript -->
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>
