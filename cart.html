@@ -17,6 +17,80 @@
 </head>
 
 <body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px" alt=""></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="proizvodi.html">Proizvodi</a></li>
+                    <li><a href="">O Nama</a></li>
+                    <li><a href="kontakt/kontakt.html">Kontakt</a></li>
+                    <li><a href="account.html">Račun</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px" alt="">
+            <div id="kosarica1">0</div>
+            <img src="images/menu.png" class="menu-icon" onclick="menuToggle()">
+        </div>
+    </div>
+    <div id="cartContainer" class="container content-section">
+        <h2 class="section-header">Košarica</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">Proizvod</span>
+            <span class="cart-price cart-header cart-column">Cijena</span>
+            <span class="cart-quantity cart-header cart-column">Količina</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Ukupno: </strong>
+            <span class="cart-total-price">0 kn</span>
+        </div>
+        <a href="#" class="btn add-cart btn-purchase">Kupi</a>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Skinite našu aplikaciju</h3>
+                    <p>Dostupno za Android i iso mobilne uređaje.</p>
+                    <div class="app-logo">
+                        <a href="https://play.google.com/store/movies"><img src="../images/play-store.png" alt=""></a>
+                        <a href="https://www.apple.com/hr/ios/app-store/"><img src="../images/app-store.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="../images/logo-white.png" alt="">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefit of Sports Accessible to the Many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Korisni linkovi:</h3>
+                    <ul>
+                        <li>Kuponi</li>
+                        <li>Blog</li>
+                        <li>Povrat proizvoda</li>
+                        <li>Pretplati se</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Zapratite nas:</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - Mateo Besednik</p>
+        </div>
+    </footer>
     <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
