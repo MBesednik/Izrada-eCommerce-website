@@ -51,6 +51,63 @@ for (let i = 0; i < carts.length; i++) {
 function cartNumber() {
     localStorage.setItem('cartNumber', 1);
 }
+// ------------------------------------------------košarica
 
-// košarica
+
+
+
+
+
+let getCart = function () {
+    if (localStorage.getItem("cart")) {
+        console.log("??")
+        // Ako u lokalnoj pohrani nema košarice, vraća prazan objekt
+        return {};
+    } else {
+        console.log("!!!??")
+        //return JSON.parse(cart);
+    }
+};
+let setCart = function (cart) {
+    // Uklanja sve proizvode čija je količina 0
+    for (let productId in cart) {
+        if (cart[productId] === 0) {
+            delete cart[productId];
+        }
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    updateCartDisplay();
+};
+
+let updateCartDisplay = function () {
+    let cartItemsElement = document.querySelector("#cart-items");
+    let cart = getCart();
+
+    cartItemsElement.textContent = Object.keys(cart).length;
+};
+
+updateCartDisplay()
+let categoriesLeftToLoad;
+function aktiviraj() {
+    let kosarica = document.getElementById("kosarica1");
+    kosarica.textContent = localStorage.getItem("total");
+}
+
+function addToCart(id) {
+    /*let start = "../images/proizvodi/";
+    let pic = start.concat(id, "proizvod.jpg");
+    let data = [pic, 1]; // ovo u kosaricu*/
+    if (localStorage.getItem(id)) {
+        let val = localStorage.getItem(id);
+        let total = localStorage.getItem("total");
+        localStorage.setItem(id, parseInt(val) + 1);
+        localStorage.setItem("total", parseInt(total) + 1);
+        aktiviraj(id);
+    } else {
+        localStorage.setItem(id, 2);
+    }
+};
+
 
