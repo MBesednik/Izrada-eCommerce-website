@@ -1,4 +1,4 @@
-
+// menu gumb
 let MenuItems = document.getElementById("MenuItems");
 
 MenuItems.style.maxHeight = "0px";
@@ -51,13 +51,7 @@ for (let i = 0; i < carts.length; i++) {
 function cartNumber() {
     localStorage.setItem('cartNumber', 1);
 }
-// ------------------------------------------------košarica
-
-
-
-
-
-
+// košarica
 let getCart = function () {
     if (localStorage.getItem("cart")) {
         console.log("??")

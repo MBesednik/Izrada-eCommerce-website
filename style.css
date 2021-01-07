@@ -98,6 +98,9 @@ p{
 .col-4 img{
     width: 100%;
 }
+#title2{
+    color: #fff;
+  }
 .title{
     text-align: center;
     margin: 0 auto 80px;
