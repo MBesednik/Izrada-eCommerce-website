@@ -576,7 +576,6 @@ form a{
 @media only screen and (max-width: 600px){
     .content-section{
         font-size: 10px;
-        background: blue;
     }
     .btn-purchase{
         padding: 4px 10px;
@@ -588,5 +587,14 @@ form a{
 @media only screen and (max-width: 400px){
     .col-4{
         flex-basis: 100%;
+    }
+    .content-section{
+        font-size: 9px;
+    }
+    .btn-purchase{
+        padding: 3px 9px;
+        width: 53px;
+        font-size: 12px;
+        margin-bottom: 10px;
     }
 }
