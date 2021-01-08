@@ -315,10 +315,6 @@ textarea.input {
   }
 }
 @media (max-width: 480px) {
-  .container2 {
-    padding: 1.5rem;
-  }
-
   .contact-info:before {
     display: none;
   }
