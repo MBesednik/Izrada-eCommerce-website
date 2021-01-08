@@ -573,8 +573,21 @@ form a{
         flex-basis: 100%;
     }
 }
+@media only screen and (max-width: 600px){
+    .content-section{
+        font-size: 10px;
+        background: blue;
+    }
+    .btn-purchase{
+        padding: 4px 10px;
+        width: 55px;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+}
 @media only screen and (max-width: 400px){
     .col-4{
         flex-basis: 100%;
     }
+
 }
