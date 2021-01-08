@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -40,6 +41,7 @@
         <h2 class="section-header">Košarica</h2>
         <div class="cart-row">
             <span class="cart-item cart-header cart-column">Proizvod</span>
+            <span class="cart-item cart-header cart-column">Veličina</span>
             <span class="cart-price cart-header cart-column">Cijena</span>
             <span class="cart-quantity cart-header cart-column">Količina</span>
         </div>
@@ -47,9 +49,9 @@
         </div>
         <div class="cart-total">
             <strong class="cart-total-title">Ukupno: </strong>
-            <span class="cart-total-price">0 kn</span>
+            <span class="cart-total-price" id="total_p">0 kn</span>
         </div>
-        <a href="#" class="btn add-cart btn-purchase">Kupi</a>
+        <a href="" class="btn add-cart btn-purchase" onclick="reset()">Kupi</a>
     </div>
     <!-- Footer -->
     <footer>
@@ -91,8 +93,72 @@
             <p class="copyright">Copyright 2020 - Mateo Besednik</p>
         </div>
     </footer>
+    <template id="cart-template-item">
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column cart-item-title">
+                <img class="neki_kurac" src="" width="50%" alt="">
+            </span>
+            <span class="cart-item cart-header cart-column cart-item-size"></span>
+            <span class="cart-price cart-header cart-column cart-item-price"></span>
+            <span class="cart-quantity cart-header cart-column cart-item-quantity"></span>
+        </div>
+    </template>
     <!-- JavaScript -->
     <script src="script.js"></script>
+    <script src="cart.js"></script>
+    <script>
+        let addCartItem = async function (id, price, sizes, quantity) {
+            let cartElement = document.querySelector(".cart-items");
+            let cartTemplateItem = document.querySelector("#cart-template-item");
+
+            let productElement = cartTemplateItem.content.cloneNode(true);
+
+            let productTitleElement = productElement.querySelector(".neki_kurac");
+            productTitleElement.src = "images/proizvodi/" + id + "proizvod.jpg";
+
+            let productSizeElement = productElement.querySelector(".cart-item-size");
+            productSizeElement.textContent = sizes;
+
+            let productPriceElement = productElement.querySelector(".cart-item-price");
+            productPriceElement.textContent = price + " kn";
+
+            let productQuantityElement = productElement.querySelector(".cart-item-quantity");
+            productQuantityElement.textContent = quantity;
+
+            cartElement.appendChild(productElement);
+        };
+        function kljucevi() {
+            let ukupna = 0;
+            for (var i = 0; i < localStorage.length; i++) {
+                if (localStorage.key(i) != "total") {
+                    console.log(localStorage.getItem(localStorage.key(i)));
+                    console.log(localStorage.key(i));
+                    let val = localStorage.getItem(localStorage.key(i));
+                    let list_val = val.split("|");
+                    console.log(list_val[2]);
+                    addCartItem(localStorage.key(i), list_val[0], list_val[1], list_val[2]);
+                    ukupna += (list_val[0] * list_val[2]);
+                }
+            }
+
+
+            let total_p = document.getElementById("total_p");
+            total_p.textContent = ukupna + ".00 kn";
+        }
+        kljucevi();
+        aktiviraj();
+        function reset() {
+            localStorage.clear();
+            aktiviraj();
+            kljucevi();
+            if (localStorage) {
+                alert("Prazna je košarica!");
+            }
+            else {
+                alert("Hvala na kupnji!");
+            }
+        }
+    </script>
 </body>
 
 </html>

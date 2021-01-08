@@ -26,9 +26,9 @@ smallImg[3].onclick = function () {
     productImg.src = smallImg[3].src;
 }
 // js za prijavu i registraciju
-let loginForm = document.getElementsById("log");
-let regForm = document.getElementsById("reg");
-let indicator = document.getElementsById("ind");
+let loginForm = document.getElementById("log");
+let regForm = document.getElementById("reg");
+let indicator = document.getElementById("ind");
 
 function register() {
     reg.style.transform = "translateX(0px)";
@@ -40,18 +40,8 @@ function login() {
     log.style.transform = "translateX(300px)";
     ind.style.transform = "translateX(0px)";
 }
-// js košarica
-let carts = document.querySelectorAll(".add-cart");
-
-for (let i = 0; i < carts.length; i++) {
-    carts[i].addEventListener("click", () => {
-        console.log("dodano");
-    })
-}
-function cartNumber() {
-    localStorage.setItem('cartNumber', 1);
-}
 // košarica
+/*
 let getCart = function () {
     if (localStorage.getItem("cart")) {
         console.log("??")
@@ -82,26 +72,52 @@ let updateCartDisplay = function () {
     cartItemsElement.textContent = Object.keys(cart).length;
 };
 
-updateCartDisplay()
+updateCartDisplay()*/
 let categoriesLeftToLoad;
 function aktiviraj() {
+    if (!localStorage.getItem("total")) {
+        localStorage.setItem("total", 0);
+    }
     let kosarica = document.getElementById("kosarica1");
     kosarica.textContent = localStorage.getItem("total");
+
 }
 
-function addToCart(id) {
-    /*let start = "../images/proizvodi/";
-    let pic = start.concat(id, "proizvod.jpg");
-    let data = [pic, 1]; // ovo u kosaricu*/
+
+
+function addToCart(id, q, c, s) {
     if (localStorage.getItem(id)) {
         let val = localStorage.getItem(id);
+        let list_val = val.split("|");
+        let new_s = s;
+        for (let j = 0; j < q - 1; j++) {
+            new_s = new_s + "," + s;
+        }
+        let velicine = list_val[1].substr(0, list_val[1].length - 1) + "," + new_s + "]";
+        let new_q = parseInt(list_val[2]) + parseInt(q);
+        let new_val = c + "|" + velicine + "|" + new_q;
+        localStorage.setItem(id, new_val);
+        //localStorage.setItem(id, "260|" + "[XL]" + "|" + "1");
+        console.log(localStorage.getItem(id));
         let total = localStorage.getItem("total");
-        localStorage.setItem(id, parseInt(val) + 1);
-        localStorage.setItem("total", parseInt(total) + 1);
-        aktiviraj(id);
+        localStorage.setItem("total", parseInt(total) + parseInt(q));
+        aktiviraj();
     } else {
-        localStorage.setItem(id, 2);
+        console
+        if (!localStorage.getItem("total")) {
+            localStorage.setItem("total", q);
+        } else {
+            localStorage.setItem("total", parseInt(localStorage.getItem("total")) + parseInt(q));
+        }
+        let new_s = s;
+        for (let j = 0; j < q - 1; j++) {
+            new_s = new_s + "," + s;
+        }
+        let new_val = c + "|[" + new_s + "]|" + q;
+        localStorage.setItem(id, new_val);
+        aktiviraj();
     }
+    alert("Proizvod je dodan u košaricu");
 };
 
 

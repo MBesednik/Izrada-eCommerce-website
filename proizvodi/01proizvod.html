@@ -33,6 +33,7 @@
                 </ul>
             </nav>
             <img src="../images/cart.png" width="30px" height="30px" alt="">
+            <div id="kosarica1">0</div>
             <img src="../images/menu.png" class="menu-icon" onclick="menuToggle()">
         </div>
     </div>
@@ -68,21 +69,23 @@
                 <p><a href="../index.html">Početna</a> / <a href="../proizvodi.html">Proizvodi</a> / <a
                         href="01proizvod.html">Adidas Power Perfect 3 crne</a></p>
                 <h1>Adidas Power Perfect 3 crne</h1>
-                <h4>990.00 kn</h4>
-                <select>
-                    <option>Odaberi veličinu</option>
-                    <option>38</option>
-                    <option>39</option>
-                    <option>40</option>
-                    <option>41</option>
-                    <option>42</option>
-                    <option>43</option>
-                    <option>44</option>
-                    <option>45</option>
-                    <option>46</option>
+                <h4><a id="cijena">900.00</a><a> kn</a></h4>
+                <a href="#">Odaberi veličinu:</a>
+                <select id="selectId">
+                    <option value="38">38</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                    <option value="43">43</option>
+                    <option value="44">44</option>
+                    <option value="45">45</option>
+                    <option value="46">46</option>
                 </select>
-                <input type="number" value="1">
-                <a href="" class="add-cart btn">Dodaj u košaricu</a>
+                <input type="number" value="1" id="q">
+                <a href="#" class="add-cart btn" onclick="addToCart('011',document.getElementById('q').value,
+                document.getElementById('cijena').textContent,
+            document.getElementById('selectId').value)">Dodaj u košaricu</a>
                 <h3>Opis proizvoda<i class="fa fa-indent"></i></h3>
                 <br>
                 <p>Ove tenisice za dizanje utega pružaju vam savršenu platformu za pretvaranje vaših vještina u djelo.
@@ -197,6 +200,9 @@
     </footer>
     <!-- JavaScript -->
     <script src="../script.js"></script>
+    <script>
+        aktiviraj();
+    </script>
 </body>
 
 </html>

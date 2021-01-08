@@ -1,10 +1,7 @@
-let carts = document.querySelectorAll(".add-cart");
+function kljucevi() {
+    for (var i = 0; i < localStorage.length; i++) {
+        console.log(localStorage.getItem(localStorage.key(i)));
+        console.log(localStorage.key(i));
+    }
+}
 
-for (let i = 0; i < carts.length; i++) {
-    carts[i].addEventListener("click", () => {
-        console.log("dodano");
-    })
-}
-function cartNumber() {
-    localStorage.setItem('cartNumber', 1);
-}

@@ -222,11 +222,16 @@ footer h3{
 }
 .footer-col-3, .footer-col-4{
     flex-basis: 12%;
-    text-align: center;
-    
+    text-align: center; 
 }
 ul{
     list-style-type: none;
+}
+.footerLink{
+    transition: 0.3s;
+}
+.footerLink:hover{
+    color: #ff523b;
 }
 .app-logo{
     margin-top: 20px;
