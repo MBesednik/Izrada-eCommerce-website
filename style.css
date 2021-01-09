@@ -89,14 +89,22 @@ p{
     padding: 0 25px;
 }
 .col-4{
-    flex-basis: 25%;
+    flex-basis: 24%;
     padding: 10px;
     min-width: 200px;
     margin-bottom: 50px;
     transition: transform 0.5s;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    height: 360px;
 }
 .col-4 img{
     width: 100%;
+}
+div .col-4 .proizvod{
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    height: 360px;
 }
 #title2{
     color: #fff;
@@ -590,6 +598,9 @@ form a{
 @media only screen and (max-width: 400px){
     .col-4{
         flex-basis: 100%;
+    }
+    .col-4 img{
+        width: 80%;
     }
     .content-section{
         font-size: 9px;

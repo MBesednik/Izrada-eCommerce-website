@@ -5,35 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title Bar Icon -->
-    <link rel="icon" type="image/icon" href="images/MB.ico">
+    <link rel="icon" type="image/icon" href="../images/MB.ico">
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Proizvodi | MM Store</title>
+    <title>Proizvodi</title>
 </head>
 
 <body>
+    <!-- navigacijska traka -->
     <div class="container">
         <div class="navbar">
             <div class="logo">
-                <a href="index.html"><img src="images/logo.png" width="125px" alt=""></a>
+                <a href="../index.html"><img src="../images/logoCrni.png" width="200px" alt=""></a>
             </div>
             <nav>
                 <ul id="MenuItems">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="proizvodi.html">Products</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="account.html">Account</a></li>
+                    <li><a href="../index.html">Početna</a></li>
+                    <li><a href="../proizvodi.html">Proizvodi</a></li>
+                    <li><a href="../aboutUs/about.html">O nama</a></li>
+                    <li><a href="../kontakt/kontakt.html">Kontakt</a></li>
+                    <li><a href="../account.html">Račun</a></li>
                 </ul>
             </nav>
-            <img src="images/cart.png" width="30px" height="30px" alt="">
-            <img src="images/menu.png" class="menu-icon" onclick="menuToggle()">
+            <a href="../cart.html">
+                <img src="../images/cart.png" width="30px" height="30px" alt="">
+            </a>
+            <div id="kosarica1">0</div>
+
+            <input type="hidden" name="idd" value="021">
+            <img src="../images/menu.png" class="menu-icon" onclick="menuToggle()">
         </div>
     </div>
     <!-- detalji pojedinačnog proizvoda -->
@@ -41,19 +47,16 @@
     <div class="small container single-product">
         <div class="row">
             <div class="col-2">
-                <img src="images/01proizvod.png" width="100%" alt="" id="productImg">
+                <img src="../images/proizvodi/191proizvod.jpg" width="100%" alt="" id="productImg">
                 <div class="small-img-row">
                     <div class="small-img-col">
-                        <img src="images/01proizvod.png" width="100%" alt="" class="small-img">
+                        <img src="../images/proizvodi/191proizvod.jpg" width="100%" alt="" class="small-img">
                     </div>
                     <div class="small-img-col">
-                        <img src="images/02proizvod.png" width="100%" alt="" class="small-img">
                     </div>
                     <div class="small-img-col">
-                        <img src="images/03proizvod.png" width="100%" alt="" class="small-img">
                     </div>
                     <div class="small-img-col">
-                        <img src="images/04proizvod.png" width="100%" alt="" class="small-img">
                     </div>
                 </div>
 
@@ -61,24 +64,30 @@
 
             </div>
             <div class="col-2">
-                <p>Home / T-Shirt</p>
-                <h1>Red Printed T-Shirt by HRX</h1>
-                <h4>$50.00</h4>
-                <select>
-                    <option>Select Size</option>
-                    <option>XXL</option>
-                    <option>XL</option>
-                    <option>Large</option>
-                    <option>Medium</option>
-                    <option>Small</option>
+                <div class="napred-nazad">
+                    <a href="17proizvod.html"><i class="fa fa-arrow-circle-left fa-4x"></i></a>
+                    <a href="19proizvod.html"><i class="fa fa-arrow-circle-right fa-4x"></i></a>
+                </div>
+                <p><a href="../index.html">Početna</a> / <a href="../proizvodi.html">Proizvodi</a> / <a
+                        href="18proizvod.html">SBD zavoji za zapešće</a></p>
+                <h1>SBD zavoji za zapešće – ČVRSTI</h1>
+                <h4><a id="cijena">299.00</a><a> kn</a></h4>
+                <a href="#">Odaberi veličinu:</a>
+                <select id="selectId">
+                    <option value="Large">Large</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Small">Small</option>
                 </select>
-                <input type="number" value="1">
-                <a href="" class="add-cart btn">Add To Cart</a>
-                <h3>Product Details <i class="fa fa-indent"></i></h3>
+                <input type="number" id="q" value="1">
+                <a href="#" class="add-cart btn" onclick="addToCart('191',document.getElementById('q').value,
+                                        document.getElementById('cijena').textContent,
+                                    document.getElementById('selectId').value)">Dodaj
+                    u
+                    košaricu</a>
+                <h3>Opis proizvoda<i class="fa fa-indent"></i></h3>
                 <br>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat inventore porro perferendis
-                    accusantium? Dicta obcaecati exercitationem facere laudantium? Ducimus dolores possimus eaque
-                    pariatur mollitia molestiae repudiandae, maxime beatae nostrum nobis.</p>
+                <p>SBD čvrsti zavoji za zapešća omogućavaju tijesno povijanje za imobilizaciju zapešća kod maksimalnih
+                    treninga dizanja i natjecanja.</p>
             </div>
         </div>
     </div>
@@ -86,17 +95,19 @@
     <!-- naslov -->
     <div class="small-container">
         <div class="row row-2">
-            <h2>Related Products</h2>
-            <p>View more</p>
+            <h2>Popularni proizvodi</h2>
+            <a href="../proizvodi.html">
+                <p>Pogledaj sve</p>
+            </a>
         </div>
     </div>
 
     <!-- proizvodi -->
 
-    <div class="small-container">
+    <div class="small-container reviews">
         <div class="row">
             <div class="col-4">
-                <img src="images/product-9.jpg" alt="">
+                <img src="../images/product-9.jpg" alt="">
                 <h4>Red Printed T-Shirt</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -108,7 +119,7 @@
                 <p>$50.00</p>
             </div>
             <div class="col-4">
-                <img src="images/product-10.jpg" alt="">
+                <img src="../images/product-10.jpg" alt="">
                 <h4>Red Printed T-Shirt</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -120,7 +131,7 @@
                 <p>$50.00</p>
             </div>
             <div class="col-4">
-                <img src="images/product-11.jpg" alt="">
+                <img src="../images/product-11.jpg" alt="">
                 <h4>Red Printed T-Shirt</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -132,7 +143,7 @@
                 <p>$50.00</p>
             </div>
             <div class="col-4">
-                <img src="images/product-12.jpg" alt="">
+                <img src="../images/product-12.jpg" alt="">
                 <h4>Red Printed T-Shirt</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -150,42 +161,62 @@
         <div class="container">
             <div class="row">
                 <div class="footer-col-1">
-                    <h3>Download Our App</h3>
-                    <p>Download App for Android and iso mobile phone.</p>
+                    <h3>Skinite našu aplikaciju</h3>
+                    <p>Dostupno za Android i iso mobilne uređaje.</p>
                     <div class="app-logo">
-                        <img src="images/play-store.png" alt="">
-                        <img src="images/app-store.png" alt="">
+                        <a href="https://play.google.com/store/movies"><img src="../images/play-store.png" alt=""></a>
+                        <a href="https://www.apple.com/hr/ios/app-store/"><img src="../images/app-store.png" alt=""></a>
                     </div>
                 </div>
                 <div class="footer-col-2">
-                    <img src="images/logo-white.png" alt="">
-                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefit of Sports Accessible to the Many.</p>
+                    <img src="../images/logoBijeli.png" alt="">
+                    <p>Cilj nam je omogućiti Vam kvalitetne proizvode i na taj način poboljšati Vaš trening.</p>
                 </div>
                 <div class="footer-col-3">
-                    <h3>Useful Links</h3>
+                    <h3>Korisni linkovi:</h3>
                     <ul>
-                        <li>Coupons</li>
-                        <li>Blog Post</li>
-                        <li>Return Policy</li>
-                        <li>Join Affiliate</li>
+                        <a class="footerLink" href="../error page/error.html">
+                            <li>Kuponi</li>
+                        </a>
+                        <a class="footerLink" href="../error page/error.html">
+                            <li>Blog</li>
+                        </a>
+                        <a class="footerLink" href="../error page/error.html">
+                            <li>Povrat proizvoda</li>
+                        </a>
+                        <a class="footerLink" href="../error page/error.html">
+                            <li>Pretplati se</li>
+                        </a>
                     </ul>
                 </div>
                 <div class="footer-col-4">
-                    <h3>Follow us</h3>
+                    <h3>Zapratite nas:</h3>
                     <ul>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                        <li>Instagram</li>
-                        <li>YouTube</li>
+                        <a class="footerLink" href="https://www.facebook.com/">
+                            <li>Facebook</li>
+                        </a>
+                        <a class="footerLink" href="https://twitter.com/">
+                            <li>Twitter</li>
+                        </a>
+                        <a class="footerLink" href="https://www.instagram.com/">
+                            <li>Instagram</li>
+                        </a>
+                        <a class="footerLink" href="https://www.youtube.com/">
+                            <li>YouTube</li>
+                        </a>
                     </ul>
                 </div>
             </div>
             <hr>
-            <p class="copyright">Copyright 2020 - Mateo Besednik</p>
+            <p class="copyright">Copyright 2020 - <a class="footerLink" href="https://github.com/MBesednik">Mateo
+                    Besednik</a> & <a class="footerLink" href="https://github.com/Marko2407">Marko Vukosav</a></p>
         </div>
     </footer>
     <!-- JavaScript -->
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
+    <script>
+        aktiviraj();
+    </script>
 </body>
 
 </html>

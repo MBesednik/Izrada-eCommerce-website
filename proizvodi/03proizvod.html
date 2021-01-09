@@ -14,25 +14,31 @@
         rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Proizvodi | MM Store</title>
+    <title>Proizvodi</title>
 </head>
 
 <body>
+    <!-- navigacijska traka -->
     <div class="container">
         <div class="navbar">
             <div class="logo">
-                <a href="../index.html"><img src="../images/logo.png" width="125px" alt=""></a>
+                <a href="../index.html"><img src="../images/logoCrni.png" width="200px" alt=""></a>
             </div>
             <nav>
                 <ul id="MenuItems">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../proizvodi.html">Products</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="../account.html">Account</a></li>
+                    <li><a href="../index.html">Početna</a></li>
+                    <li><a href="../proizvodi.html">Proizvodi</a></li>
+                    <li><a href="../aboutUs/about.html">O nama</a></li>
+                    <li><a href="../kontakt/kontakt.html">Kontakt</a></li>
+                    <li><a href="../account.html">Račun</a></li>
                 </ul>
             </nav>
-            <img src="../images/cart.png" width="30px" height="30px" alt="">
+            <a href="../cart.html">
+                <img src="../images/cart.png" width="30px" height="30px" alt="">
+            </a>
+            <div id="kosarica1">0</div>
+
+            <input type="hidden" name="idd" value="021">
             <img src="../images/menu.png" class="menu-icon" onclick="menuToggle()">
         </div>
     </div>
@@ -50,6 +56,7 @@
                         <img src="../images/proizvodi/032proizvod.jpg" width="100%" alt="" class="small-img">
                     </div>
                     <div class="small-img-col">
+                        <img src="../images/proizvodi/033proizvod.jpg" width="100%" alt="" class="small-img">
                     </div>
                     <div class="small-img-col">
                     </div>
@@ -66,17 +73,21 @@
                 <p><a href="../index.html">Početna</a> / <a href="../proizvodi.html">Proizvodi</a> / <a
                         href="03proizvod.html">Girja</a></p>
                 <h1>Girja</h1>
-                <h4>300.00 kn</h4>
-                <select>
-                    <option>Odaberi težinu</option>
-                    <option>8 kg</option>
-                    <option>12 kg</option>
-                    <option>10 kg</option>
-                    <option>14 kg</option>
-                    <option>18kg</option>
+                <h4><a id="cijena">300.00</a><a> kn</a></h4>
+                <a href="#">Odaberi težinu:</a>
+                <select id="selectId">
+                    <option value="8 kg">8 kg</option>
+                    <option value="10 kg">10 kg</option>
+                    <option value="12 kg">12 kg</option>
+                    <option value="14 kg">14 kg</option>
+                    <option value="18 kg">18 kg</option>
                 </select>
-                <input type="number" value="1">
-                <a href="" class="add-cart btn">Dodaj u košaricu</a>
+                <input type="number" id="q" value="1">
+                <a href="#" class="add-cart btn" onclick="addToCart('031',document.getElementById('q').value,
+                                        document.getElementById('cijena').textContent,
+                                    document.getElementById('selectId').value)">Dodaj
+                    u
+                    košaricu</a>
                 <h3>Opis proizvoda<i class="fa fa-indent"></i></h3>
                 <br>
                 <p>Girje su izrađene od čvrstog lijevanog željeza i praškastog sloja, što pruža otpornost na koroziju.
@@ -165,34 +176,54 @@
                     </div>
                 </div>
                 <div class="footer-col-2">
-                    <img src="../images/logo-white.png" alt="">
-                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefit of Sports Accessible to the Many.</p>
+                    <img src="../images/logoBijeli.png" alt="">
+                    <p>Cilj nam je omogućiti Vam kvalitetne proizvode i na taj način poboljšati Vaš trening.</p>
                 </div>
                 <div class="footer-col-3">
                     <h3>Korisni linkovi:</h3>
                     <ul>
-                        <li>Kuponi</li>
-                        <li>Blog</li>
-                        <li>Povrat proizvoda</li>
-                        <li>Pretplati se</li>
+                        <a class="footerLink" href="../error page/error.html">
+                            <li>Kuponi</li>
+                        </a>
+                        <a class="footerLink" href="../error page/error.html">
+                            <li>Blog</li>
+                        </a>
+                        <a class="footerLink" href="../error page/error.html">
+                            <li>Povrat proizvoda</li>
+                        </a>
+                        <a class="footerLink" href="../error page/error.html">
+                            <li>Pretplati se</li>
+                        </a>
                     </ul>
                 </div>
                 <div class="footer-col-4">
                     <h3>Zapratite nas:</h3>
                     <ul>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                        <li>Instagram</li>
-                        <li>YouTube</li>
+                        <a class="footerLink" href="https://www.facebook.com/">
+                            <li>Facebook</li>
+                        </a>
+                        <a class="footerLink" href="https://twitter.com/">
+                            <li>Twitter</li>
+                        </a>
+                        <a class="footerLink" href="https://www.instagram.com/">
+                            <li>Instagram</li>
+                        </a>
+                        <a class="footerLink" href="https://www.youtube.com/">
+                            <li>YouTube</li>
+                        </a>
                     </ul>
                 </div>
             </div>
             <hr>
-            <p class="copyright">Copyright 2020 - Mateo Besednik</p>
+            <p class="copyright">Copyright 2020 - <a class="footerLink" href="https://github.com/MBesednik">Mateo
+                    Besednik</a> & <a class="footerLink" href="https://github.com/Marko2407">Marko Vukosav</a></p>
         </div>
     </footer>
     <!-- JavaScript -->
     <script src="../script.js"></script>
+    <script>
+        aktiviraj();
+    </script>
 </body>
 
 </html>
