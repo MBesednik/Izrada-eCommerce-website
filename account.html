@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,31 +14,33 @@
         rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Račun</title>
+    <title>Naslovna</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <a href="index.html"><img src="images/logoCrni.png" width="200px" alt=""></a>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logoCrni.png" width="200px" alt=""></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Početna</a></li>
+                        <li><a href="proizvodi.html">Proizvodi</a></li>
+                        <li><a href="aboutUs/about.html">O Nama</a></li>
+                        <li><a href="kontakt/kontakt.html">Kontakt</a></li>
+                        <li><a href="account.html">Račun</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html">
+                    <img src="images/cart.png" width="30px" height="30px" alt=""></a>
+                <div id="kosarica1">0</div>
+                <img src="images/menu.png" class="menu-icon" onclick="menuToggle()">
             </div>
-            <nav>
-                <ul id="MenuItems">
-                    <li><a href="index.html">Početna</a></li>
-                    <li><a href="proizvodi.html">Proizvodi</a></li>
-                    <li><a href="aboutUs/about.html">O Nama</a></li>
-                    <li><a href="kontakt/kontakt.html">Kontakt</a></li>
-                    <li><a href="account.html">Račun</a></li>
-                </ul>
-            </nav>
-            <a href="cart.html">
-                <img src="images/cart.png" width="30px" height="30px" alt="">
-            </a>
-            <div id="kosarica1">0</div>
-            <img src="images/menu.png" class="menu-icon" onclick="menuToggle()">
         </div>
-    </div>
+    </header>
+
     <!-- Account stranica -->
     <div class="account-page">
         <div class="container">
