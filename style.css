@@ -29,6 +29,24 @@ nav ul li{
     display: inline-block;
     margin-right: 20px;
 }
+nav ul li a{
+    transition: 0.3s;
+}
+nav ul li a:hover{
+    color: #ff523b;
+}
+.col-2 p a{
+    transition: 0.3s;
+}
+.col-2 p a:hover{
+    color: #ff523b;
+}
+.row-2 a p{
+    transition: 0.3s;
+}
+.row-2 a p:hover{
+    color: #ff523b;
+}
 a{
     text-decoration: none;
     color: #555;
