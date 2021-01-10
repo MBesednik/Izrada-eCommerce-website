@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title Bar Icon -->
+    <link rel="icon" type="image/icon" href="images/MB.ico">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Proizvodi</title>
+</head>
+
+<body>
+    <!-- navigacija -->
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logoCrni.png" width="200px" alt=""></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="proizvodi.html">Proizvodi</a></li>
+                    <li><a href="/aboutUs/about.html">O Nama</a></li>
+                    <li><a href="kontakt/kontakt.html">Kontakt</a></li>
+                    <li><a href="account.html">Račun</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px" alt="">
+            <div id="kosarica1">0</div>
+            <img src="images/menu.png" class="menu-icon" onclick="menuToggle()">
+        </div>
+    </div>
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Svi proizvodi</h2>
+            <select name="" id="">
+                <option value="">Default Shorting</option>
+                <option value="">Short by price</option>
+                <option value="">Short by popularity</option>
+                <option value="">Short by rating</option>
+                <option value="">Short by sale</option>
+            </select>
+        </div>
+        <div class="row">
+            <div class="col-4 proizvod">
+                <a href="proizvodi/25proizvod.html"><img src="images/proizvodi/212proizvod.jpg"
+                        alt="SBD zavoji za zapešće – FLEKSIBILNI" title="SBD zavoji za zapešće – FLEKSIBILNI">
+                    <h4>SBD zavoji za zapešće – FLEKSIBILNI</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>299.00 kn</p>
+            </div>
+            <div class="col-4 proizvod">
+                <a href="proizvodi/26proizvod.html"><img src="images/proizvodi/222proizvod.jpg"
+                        alt="SABO Powerlifting Shoes Deadlift" title="SABO Powerlifting Shoes Deadlift">
+                    <h4>SABO Powerlifting Shoes Deadlift</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>719.00 kn</p>
+                </a>
+            </div>
+            <div class="col-4">
+                <a href="proizvodi/27proizvod.html"><img src="images/proizvodi/232proizvod.jpg"
+                        alt="SABO Powerlifting Shoes Squat crvene" title="SABO Powerlifting Shoes Squat crvene">
+                    <h4>SABO Powerlifting Shoes Squat crvene</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>799.00 kn</p>
+            </div>
+            <div class="col-4">
+                <a href="proizvodi/29proizvod.html"><img src="images/proizvodi/244proizvod.jpg"
+                        alt="SABO Powerlifting Shoes Squat crne" title="SABO Powerlifting Shoes Squat crne">
+                    <h4>SABO Powerlifting Shoes Squat crne</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>799.00 kn</p>
+            </div>
+        </div>
+
+        <div class="page-btn">
+            <a href="proizvodi.html"><span>1</span></a>
+            <a href="proizvodiDruga.html"><span>2</span></a>
+            <a href="proizvodiTreća.html"><span>3</span></a>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Skinite našu aplikaciju</h3>
+                    <p>Dostupno za Android i iso mobilne uređaje.</p>
+                    <div class="app-logo">
+                        <a href="https://play.google.com/store/movies"><img src="../images/play-store.png" alt=""></a>
+                        <a href="https://www.apple.com/hr/ios/app-store/"><img src="../images/app-store.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="../images/logoBijeli.png" alt="">
+                    <p>Cilj nam je omogućiti Vam kvalitetne proizvode i na taj način poboljšati Vaš trening.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Korisni linkovi:</h3>
+                    <ul>
+                        <a class="footerLink" href="../error page/error.html">
+                            <li>Kuponi</li>
+                        </a>
+                        <a class="footerLink" href="../error page/error.html">
+                            <li>Blog</li>
+                        </a>
+                        <a class="footerLink" href="../error page/error.html">
+                            <li>Povrat proizvoda</li>
+                        </a>
+                        <a class="footerLink" href="../error page/error.html">
+                            <li>Pretplati se</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Zapratite nas:</h3>
+                    <ul>
+                        <a class="footerLink" href="https://www.facebook.com/">
+                            <li>Facebook</li>
+                        </a>
+                        <a class="footerLink" href="https://twitter.com/">
+                            <li>Twitter</li>
+                        </a>
+                        <a class="footerLink" href="https://www.instagram.com/">
+                            <li>Instagram</li>
+                        </a>
+                        <a class="footerLink" href="https://www.youtube.com/">
+                            <li>YouTube</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - <a class="footerLink" href="https://github.com/MBesednik">Mateo
+                    Besednik</a> & <a class="footerLink" href="https://github.com/Marko2407">Marko Vukosav</a></p>
+        </div>
+        <!-- JavaScript -->
+        <script src="script.js"></script>
+        <script>
+            aktiviraj();
+        </script>
+</body>
+
+</html>
