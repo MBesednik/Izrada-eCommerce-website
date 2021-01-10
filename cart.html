@@ -21,18 +21,20 @@
     <div class="container konteinerKosara">
         <div class="navbar">
             <div class="logo">
-                <a href="index.html"><img src="images/logo.png" width="125px" alt=""></a>
+                <a href="index.html"><img src="images/logoCrni.png" width="200px" alt=""></a>
             </div>
             <nav>
                 <ul id="MenuItems">
                     <li><a href="index.html">Početna</a></li>
                     <li><a href="proizvodi.html">Proizvodi</a></li>
-                    <li><a href="">O Nama</a></li>
+                    <li><a href="aboutUs/about.html">O Nama</a></li>
                     <li><a href="kontakt/kontakt.html">Kontakt</a></li>
                     <li><a href="account.html">Račun</a></li>
                 </ul>
             </nav>
-            <img src="images/cart.png" width="30px" height="30px" alt="">
+            <a href="cart.html">
+                <img src="images/cart.png" width="30px" height="30px" alt="">
+            </a>
             <div id="kosarica1">0</div>
             <img src="images/menu.png" class="menu-icon" onclick="menuToggle()">
         </div>
@@ -54,6 +56,7 @@
         <a href="" class="btn add-cart btn-purchase" onclick="reset()">Kupi</a>
     </div>
     <!-- Footer -->
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
@@ -66,99 +69,116 @@
                     </div>
                 </div>
                 <div class="footer-col-2">
-                    <img src="../images/logo-white.png" alt="">
-                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefit of Sports Accessible to the Many.
-                    </p>
+                    <a href="index.html">
+                        <img src="../images/logoBijeli.png" alt="">
+                    </a>
+                    <p>Cilj nam je omogućiti Vam kvalitetne proizvode i na taj način poboljšati Vaš trening.</p>
                 </div>
                 <div class="footer-col-3">
                     <h3>Korisni linkovi:</h3>
                     <ul>
-                        <li>Kuponi</li>
-                        <li>Blog</li>
-                        <li>Povrat proizvoda</li>
-                        <li>Pretplati se</li>
+                        <a class="footerLink" href="../error page/error.html">
+                            <li>Kuponi</li>
+                        </a>
+                        <a class="footerLink" href="../error page/error.html">
+                            <li>Blog</li>
+                        </a>
+                        <a class="footerLink" href="../error page/error.html">
+                            <li>Povrat proizvoda</li>
+                        </a>
+                        <a class="footerLink" href="../error page/error.html">
+                            <li>Pretplati se</li>
+                        </a>
                     </ul>
                 </div>
                 <div class="footer-col-4">
                     <h3>Zapratite nas:</h3>
                     <ul>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                        <li>Instagram</li>
-                        <li>YouTube</li>
+                        <a class="footerLink" href="https://www.facebook.com/">
+                            <li>Facebook</li>
+                        </a>
+                        <a class="footerLink" href="https://twitter.com/">
+                            <li>Twitter</li>
+                        </a>
+                        <a class="footerLink" href="https://www.instagram.com/">
+                            <li>Instagram</li>
+                        </a>
+                        <a class="footerLink" href="https://www.youtube.com/">
+                            <li>YouTube</li>
+                        </a>
                     </ul>
                 </div>
             </div>
             <hr>
-            <p class="copyright">Copyright 2020 - Mateo Besednik</p>
+            <p class="copyright">Copyright 2020 - <a class="footerLink" href="https://github.com/MBesednik">Mateo
+                    Besednik</a> & <a class="footerLink" href="https://github.com/Marko2407">Marko Vukosav</a></p>
         </div>
-    </footer>
-    <template id="cart-template-item">
-        <div class="cart-row">
-            <span class="cart-item cart-header cart-column cart-item-title">
-                <img class="neki_kurac" src="" width="50%" alt="">
-            </span>
-            <span class="cart-item cart-header cart-column cart-item-size"></span>
-            <span class="cart-price cart-header cart-column cart-item-price"></span>
-            <span class="cart-quantity cart-header cart-column cart-item-quantity"></span>
-        </div>
-    </template>
-    <!-- JavaScript -->
-    <script src="script.js"></script>
-    <script src="cart.js"></script>
-    <script>
-        let addCartItem = async function (id, price, sizes, quantity) {
-            let cartElement = document.querySelector(".cart-items");
-            let cartTemplateItem = document.querySelector("#cart-template-item");
+        <template id="cart-template-item">
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column cart-item-title">
+                    <img class="neki_kurac" src="" width="50%" alt="">
+                </span>
+                <span class="cart-item cart-header cart-column cart-item-size"></span>
+                <span class="cart-price cart-header cart-column cart-item-price"></span>
+                <span class="cart-quantity cart-header cart-column cart-item-quantity"></span>
+            </div>
+        </template>
+        <!-- JavaScript -->
+        <script src="script.js"></script>
+        <script src="cart.js"></script>
+        <script>
+            let addCartItem = async function (id, price, sizes, quantity) {
+                let cartElement = document.querySelector(".cart-items");
+                let cartTemplateItem = document.querySelector("#cart-template-item");
 
-            let productElement = cartTemplateItem.content.cloneNode(true);
+                let productElement = cartTemplateItem.content.cloneNode(true);
 
-            let productTitleElement = productElement.querySelector(".neki_kurac");
-            productTitleElement.src = "images/proizvodi/" + id + "proizvod.jpg";
+                let productTitleElement = productElement.querySelector(".neki_kurac");
+                productTitleElement.src = "images/proizvodi/" + id + "proizvod.jpg";
 
-            let productSizeElement = productElement.querySelector(".cart-item-size");
-            productSizeElement.textContent = sizes;
+                let productSizeElement = productElement.querySelector(".cart-item-size");
+                productSizeElement.textContent = sizes;
 
-            let productPriceElement = productElement.querySelector(".cart-item-price");
-            productPriceElement.textContent = price + " kn";
+                let productPriceElement = productElement.querySelector(".cart-item-price");
+                productPriceElement.textContent = price + " kn";
 
-            let productQuantityElement = productElement.querySelector(".cart-item-quantity");
-            productQuantityElement.textContent = quantity;
+                let productQuantityElement = productElement.querySelector(".cart-item-quantity");
+                productQuantityElement.textContent = quantity;
 
-            cartElement.appendChild(productElement);
-        };
-        function kljucevi() {
-            let ukupna = 0;
-            for (var i = 0; i < localStorage.length; i++) {
-                if (localStorage.key(i) != "total") {
-                    console.log(localStorage.getItem(localStorage.key(i)));
-                    console.log(localStorage.key(i));
-                    let val = localStorage.getItem(localStorage.key(i));
-                    let list_val = val.split("|");
-                    console.log(list_val[2]);
-                    addCartItem(localStorage.key(i), list_val[0], list_val[1], list_val[2]);
-                    ukupna += (list_val[0] * list_val[2]);
+                cartElement.appendChild(productElement);
+            };
+            function kljucevi() {
+                let ukupna = 0;
+                for (var i = 0; i < localStorage.length; i++) {
+                    if (localStorage.key(i) != "total") {
+                        console.log(localStorage.getItem(localStorage.key(i)));
+                        console.log(localStorage.key(i));
+                        let val = localStorage.getItem(localStorage.key(i));
+                        let list_val = val.split("|");
+                        console.log(list_val[2]);
+                        addCartItem(localStorage.key(i), list_val[0], list_val[1], list_val[2]);
+                        ukupna += (list_val[0] * list_val[2]);
+                    }
+                }
+
+
+                let total_p = document.getElementById("total_p");
+                total_p.textContent = ukupna + ".00 kn";
+            }
+            kljucevi();
+            aktiviraj();
+            function reset() {
+                localStorage.clear();
+                aktiviraj();
+                kljucevi();
+                if (localStorage) {
+                    alert("Prazna je košarica!");
+                }
+                else {
+                    alert("Hvala na kupnji!");
                 }
             }
-
-
-            let total_p = document.getElementById("total_p");
-            total_p.textContent = ukupna + ".00 kn";
-        }
-        kljucevi();
-        aktiviraj();
-        function reset() {
-            localStorage.clear();
-            aktiviraj();
-            kljucevi();
-            if (localStorage) {
-                alert("Prazna je košarica!");
-            }
-            else {
-                alert("Hvala na kupnji!");
-            }
-        }
-    </script>
+        </script>
 </body>
 
 </html>

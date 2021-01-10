@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="with=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title Bar Icon -->
     <link rel="icon" type="image/icon" href="images/MB.ico">
@@ -19,350 +18,407 @@
 </head>
 
 <body>
-    <div class="header">
-        <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <a href="index.html"><img src="images/logoCrni.png" width="200px" alt=""></a>
-                </div>
-                <nav>
-                    <ul id="MenuItems">
-                        <li><a href="index.html">Početna</a></li>
-                        <li><a href="proizvodi.html">Proizvodi</a></li>
-                        <li><a href="">O Nama</a></li>
-                        <li><a href="kontakt/kontakt.html">Kontakt</a></li>
-                        <li><a href="account.html">Račun</a></li>
-                    </ul>
-                </nav>
-                <img src="images/cart.png" width="30px" height="30px" alt="">
-                <div id="kosarica1">0</div>
-                <img src="images/menu.png" class="menu-icon" onclick="menuToggle()">
-            </div>
-            <div class="row">
-                <div class="col-2">
-                    <h1>Give Your Workout <br>A New Style!</h1>
-                    <p>Success isn't always about greatness. It's about consistency. Consistent <br>hard work gains
-                        success.
-                        Greatness will come.</p>
-                    <a href="" class="btn">Explore Now</a>
-                </div>
-                <div class="col-2">
-                    <img src="images/image1.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Featured categories -->
-    <div class="categories">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-3">
-                    <img src="images/sbd1.webp" alt="">
-                </div>
-                <div class="col-3">
-                    <img src="images/sbd2.jpg" alt="">
-                </div>
-                <div class="col-3">
-                    <img src="images/sbd3.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Featured products -->
-    <div class="small-container">
-        <h2 class="title">Featured Products</h2>
-        <div class="row">
-            <div class="col-4">
-                <a href="product1-details.html">
-                    <img src="images/product-1.jpg" alt="">
-                    <h4>Red Printed T-Shirt</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logoCrni.png" width="200px" alt=""></a>
                     </div>
-                    <p>$50.00</p>
-                </a>
+                    <nav>
+                        <ul id="MenuItems">
+                            <li><a href="index.html">Početna</a></li>
+                            <li><a href="proizvodi.html">Proizvodi</a></li>
+                            <li><a href="aboutUs/about.html">O Nama</a></li>
+                            <li><a href="kontakt/kontakt.html">Kontakt</a></li>
+                            <li><a href="account.html">Račun</a></li>
+                        </ul>
+                    </nav>
+                    <a href="cart.html">
+                        <img src="images/cart.png" width="30px" height="30px" alt=""></a>
+                    <div id="kosarica1">0</div>
+                    <img src="images/menu.png" class="menu-icon" onclick="menuToggle()">
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <h1>Give Your Workout <br>A New Style!</h1>
+                        <p>Success isn't always about greatness. It's about consistency. Consistent <br>hard work gains
+                            success.
+                            Greatness will come.</p>
+                        <a href="#istraži" class="btn">Pogledaj</a>
+                    </div>
+                    <div class="col-2">
+                        <img src="images/image1.png" alt="">
+                    </div>
+                </div>
             </div>
+        </div>
+    </header>
 
-            <div class="col-4">
-                <img src="images/product-2.jpg" alt="">
-                <h4>Red Printed T-Shirt</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                    <i class="fa fa-star-o"></i>
+    <section id="istraži">
+        <!-- Featured categories -->
+        <div class="categories">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="images/sbd1.webp" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img src="images/sbd2.jpg" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img src="images/sbd3.jpg" alt="">
+                    </div>
                 </div>
-                <p>$50.00</p>
-            </div>
-            <div class="col-4">
-                <img src="images/product-3.jpg" alt="">
-                <h4>Red Printed T-Shirt</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>$50.00</p>
-            </div>
-            <div class="col-4">
-                <img src="images/product-4.jpg" alt="">
-                <h4>Red Printed T-Shirt</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>$50.00</p>
             </div>
         </div>
-        <h2 class="title">Latest Products</h2>
-        <div class="row">
-            <div class="col-4">
-                <img src="images/product-5.jpg" alt="">
-                <h4>Red Printed T-Shirt</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>$50.00</p>
-            </div>
-            <div class="col-4">
-                <img src="images/product-6.jpg" alt="">
-                <h4>Red Printed T-Shirt</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>$50.00</p>
-            </div>
-            <div class="col-4">
-                <img src="images/product-7.jpg" alt="">
-                <h4>Red Printed T-Shirt</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>$50.00</p>
-            </div>
-            <div class="col-4">
-                <img src="images/product-8.jpg" alt="">
-                <h4>Red Printed T-Shirt</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>$50.00</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-4">
-                <img src="images/product-9.jpg" alt="">
-                <h4>Red Printed T-Shirt</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>$50.00</p>
-            </div>
-            <div class="col-4">
-                <img src="images/product-10.jpg" alt="">
-                <h4>Red Printed T-Shirt</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>$50.00</p>
-            </div>
-            <div class="col-4">
-                <img src="images/product-11.jpg" alt="">
-                <h4>Red Printed T-Shirt</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>$50.00</p>
-            </div>
-            <div class="col-4">
-                <img src="images/product-12.jpg" alt="">
-                <h4>Red Printed T-Shirt</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>$50.00</p>
-            </div>
-        </div>
-    </div>
-    <!-- Offer -->
-    <div class="offer">
+        <!-- Featured products -->
         <div class="small-container">
+            <h2 class="title">Nudimo vam</h2>
             <div class="row">
-                <div class="col-2">
-                    <img src="images/exclusive.png" class="offer-img" alt="">
+                <div class="col-4">
+                    <a href="proizvodi/01proizvod.html">
+                        <img src="images/proizvodi/011proizvod.jpg" alt="Adidas Power Perfect 3 crne"
+                            title="Adidas Power Perfect 3 crne">
+                        <h4>Adidas Power Perfect 3 crne</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>990.00 kn</p>
+                    </a>
                 </div>
-                <div class="col-2">
-                    <p>Sada dostupno na MM Store</p>
-                    <h1>Smart Band 4</h1>
-                    <small>
-                        Istakni se i živi bolje! Odluči se za Smart Band 4 pametnu narukicu
-                        koja prati tvoje aktivnosti i izaberi zdrav život. Prati svoje korake, otkucaje srca, san i još
-                        mnogo drugih parametara i budi najbolja verzija sebe!
-                    </small>
-                    <br>
-                    <a href="/proizvodi/29proizvod.html" class="btn">Detaljnije</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Testimontial -->
-    <div class="testimontial">
-        <div class="small-container">
+                <div class="col-4">
+                    <a href="/proizvodi/02proizvod.html">
+                        <img src="images/proizvodi/021proizvod.jpg" alt="REHBAND steznik za koljeno"
+                            title="REHBAND steznik za koljeno">
+                        <h4>REHBAND steznik za koljeno</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>269.00 kn</p>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="/proizvodi/03proizvod.html">
+                        <img src="images/proizvodi/031proizvod.jpg" alt="Girje" title="Girje">
+                        <h4>Girje</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <p>300.00 kn</p>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="proizvodi/04proizvod.html">
+                        <img src="images/proizvodi/041proizvod.jpg" alt="Gumena Hex bučica set"
+                            title="Gumena Hex bučica set">
+                        <h4>Gumena Hex bučica set</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>320.00 kn</p>
+                    </a>
+                </div>
+            </div>
+            <h2 class="title">Popularni proizvodi</h2>
             <div class="row">
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
-                    <p>Lorem ipsum dolor, </p>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-o"></i>
-                    </div>
-                    <img src="images/kec.jpg" alt="">
-                    <h3>Marko Samaržija</h3>
+                <div class="col-4">
+                    <a href="/proizvodi/17proizvod.html">
+                        <img src="images/proizvodi/181proizvod.jpg" alt="SBD dres" title="SBD dres">
+                        <h4>SBD dres</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>599.00 kn</p>
+                    </a>
                 </div>
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
-                    <p>Lorem ipsum dolor, sit amet consectetur ade. Debitis amet laboriosam ad cumque adipisci molestias
-                        enim fuga asperiores!</p>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                    <img src="images/tin.jpg" alt="">
-                    <h3>Tin Palac</h3>
+                <div class="col-4">
+                    <a href="proizvodi/18proizvod.html">
+                        <img src="images/proizvodi/191proizvod.jpg" alt="SBD zavoj za zapešće - ČVRSTI"
+                            title="SBD zavoj za zapešće - ČVRSTI">
+                        <h4>SBD zavoj za zapešće - ČVRSTI</h4>
+                        <div class=" rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <p>299.00 kn</p>
+                    </a>
                 </div>
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio odio ducimus vel qui earum
-                        deserunt unde eum mollitia, dolorum labore. Debitis amet laboriosam ad cumque adipisci molestias
-                        enim fuga asperiores!</p>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <img src="images/šoki.jpg" alt="">
-                    <h3>Luka Šoštarić</h3>
+                <div class="col-4">
+                    <a href="proizvodi/19proizvod.html">
+                        <img src="images/proizvodi/201proizvod.jpg" alt="SBD steznik za lakat"
+                            title="SBD steznik za lakat">
+                        <h4>SBD steznik za lakat</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>399.00 kn</p>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="proizvodi/20proizvod.html">
+                        <img src="images/proizvodi/202proizvod.jpg" alt="SBD steznici za koljena"
+                            title="SBD steznici za koljena">
+                        <h4>SBD steznici za koljena</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>599.00 kn</p>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <a href="proizvodi/25proizvod.html">
+                        <img src="images/proizvodi/212proizvod.jpg" alt="SBD zavoji za zapešće - FLEKSIBILNI"
+                            title="SBD zavoji za zapešće - FLEKSIBILNI">
+                        <h4>SBD zavoji za zapešće - FLEKSIBILNI</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>299.00 kn</p>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="proizvodi/26proizvod.html">
+                        <img src="images/proizvodi/222proizvod.jpg" alt="SABO Powerlifting Shoes Deadlift"
+                            title="SABO Powerlifting Shoes Deadlift">
+                        <h4>SABO Powerlifting Shoes Deadlift</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>719.00 kn</p>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="proizvodi/27proizvod.html">
+                        <img src="images/proizvodi/232proizvod.jpg" alt="SABO Powerlifting Shoes Squat crvene"
+                            title="SABO Powerlifting Shoes Squat crvene">
+                        <h4>SABO Powerlifting Shoes Squat crvene</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <p>799.00</p>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="proizvodi/28proizvod.html">
+                        <img src="images/proizvodi/244proizvod.jpg" alt="SABO Powerlifting Shoes Squat crne"
+                            title="SABO Powerlifting Shoes Squat crne">
+                        <h4>SABO Powerlifting Shoes Squat crne</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>799.00 kn</p>
+                    </a>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Brands -->
-    <div class="brands">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-5">
-                    <img src="images/logo-godrej.png" alt="">
-                </div>
-                <div class="col-5">
-                    <img src="images/logo-oppo.png" alt="">
-                </div>
-                <div class="col-5">
-                    <img src="images/logo-coca-cola.png" alt="">
-                </div>
-                <div class="col-5">
-                    <img src="images/logo-paypal.png" alt="">
-                </div>
-                <div class="col-5">
-                    <img src="images/logo-philips.png" alt="">
+        <!-- Offer -->
+        <div class="offer">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="images/exclusive.png" class="offer-img" alt="">
+                    </div>
+                    <div class="col-2">
+                        <p>Sada dostupno na MM Store</p>
+                        <h1>Smart Band 4</h1>
+                        <small>
+                            Istakni se i živi bolje! Odluči se za Smart Band 4 pametnu narukicu
+                            koja prati tvoje aktivnosti i izaberi zdrav život. Prati svoje korake, otkucaje srca, san i
+                            još
+                            mnogo drugih parametara i budi najbolja verzija sebe!
+                        </small>
+                        <br>
+                        <a href="/proizvodi/29proizvod.html" class="btn">Detaljnije</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+
+        <!-- Recenzije proizvoda -->
+        <div class="testimontial">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Od kad koristim SBD steznike za koljena osjećam se puno sigurnije dok radim čučanj, moja
+                            koljena su vam zahvalna!</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <img src="images/kec.jpg" alt="">
+                        <h3>Marko Samaržija</h3>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Kupio sam SBD fleksibilne zavoje za zapšće i oduševljne sam, prvi put benchao preko 100 kg sa
+                            njima!</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <img src="images/tin.jpg" alt="">
+                        <h3>Tin Palac</h3>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p>SABO tenisice za čučanj su čudo! Još uvijek nemogu vjerovati kolika je razlika sa njima i bez
+                            njih.</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <img src="images/šoki.jpg" alt="">
+                        <h3>Luka Šoštarić</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sponzori -->
+        <div class="brands">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <img src="images/logo-godrej.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-oppo.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-coca-cola.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-paypal.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-philips.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
                 <div class="footer-col-1">
-                    <h3>Download Our App</h3>
-                    <p>Download App for Android and iso mobile phone.</p>
+                    <h3>Skinite našu aplikaciju</h3>
+                    <p>Dostupno za Android i iso mobilne uređaje.</p>
                     <div class="app-logo">
-                        <img src="images/play-store.png" alt="">
-                        <img src="images/app-store.png" alt="">
+                        <a href="https://play.google.com/store/movies"><img src="../images/play-store.png" alt=""></a>
+                        <a href="https://www.apple.com/hr/ios/app-store/"><img src="../images/app-store.png" alt=""></a>
                     </div>
                 </div>
                 <div class="footer-col-2">
-                    <img src="images/logoBijeli.png" alt="">
-                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefit of Sports Accessible to the Many.</p>
+                    <a href="index.html">
+                        <img src="../images/logoBijeli.png" alt="">
+                    </a>
+                    <p>Cilj nam je omogućiti Vam kvalitetne proizvode i na taj način poboljšati Vaš trening.</p>
                 </div>
                 <div class="footer-col-3">
-                    <h3>Useful Links</h3>
+                    <h3>Korisni linkovi:</h3>
                     <ul>
-                        <li>Coupons</li>
-                        <li>Blog Post</li>
-                        <li>Return Policy</li>
-                        <li>Join Affiliate</li>
+                        <a class="footerLink" href="../error page/error.html">
+                            <li>Kuponi</li>
+                        </a>
+                        <a class="footerLink" href="../error page/error.html">
+                            <li>Blog</li>
+                        </a>
+                        <a class="footerLink" href="../error page/error.html">
+                            <li>Povrat proizvoda</li>
+                        </a>
+                        <a class="footerLink" href="../error page/error.html">
+                            <li>Pretplati se</li>
+                        </a>
                     </ul>
                 </div>
                 <div class="footer-col-4">
-                    <h3>Follow us</h3>
+                    <h3>Zapratite nas:</h3>
                     <ul>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                        <li>Instagram</li>
-                        <li>YouTube</li>
+                        <a class="footerLink" href="https://www.facebook.com/">
+                            <li>Facebook</li>
+                        </a>
+                        <a class="footerLink" href="https://twitter.com/">
+                            <li>Twitter</li>
+                        </a>
+                        <a class="footerLink" href="https://www.instagram.com/">
+                            <li>Instagram</li>
+                        </a>
+                        <a class="footerLink" href="https://www.youtube.com/">
+                            <li>YouTube</li>
+                        </a>
                     </ul>
                 </div>
             </div>
             <hr>
-            <p class="copyright">Copyright 2020 - Mateo Besednik</p>
+            <p class="copyright">Copyright 2020 - <a class="footerLink" href="https://github.com/MBesednik">Mateo
+                    Besednik</a> & <a class="footerLink" href="https://github.com/Marko2407">Marko Vukosav</a></p>
         </div>
-    </footer>
-    <!-- JavaScript -->
-    <script src="script.js"></script>
-    <script>
-        aktiviraj();
-    </script>
+        <!-- JavaScript -->
+        <script src="script.js"></script>
+        <script>
+            aktiviraj();
+        </script>
 </body>
 
 </html>
