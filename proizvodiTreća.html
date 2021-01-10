@@ -20,25 +20,29 @@
 
 <body>
     <!-- navigacija -->
-    <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <a href="index.html"><img src="images/logoCrni.png" width="200px" alt=""></a>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logoCrni.png" width="200px" alt=""></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Početna</a></li>
+                        <li><a href="proizvodi.html">Proizvodi</a></li>
+                        <li><a href="/aboutUs/about.html">O Nama</a></li>
+                        <li><a href="kontakt/kontakt.html">Kontakt</a></li>
+                        <li><a href="account.html">Račun</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html">
+                    <img src="images/cart.png" width="30px" height="30px" alt="">
+                </a>
+                <div id="kosarica1">0</div>
+                <img src="images/menu.png" class="menu-icon" onclick="menuToggle()">
             </div>
-            <nav>
-                <ul id="MenuItems">
-                    <li><a href="index.html">Početna</a></li>
-                    <li><a href="proizvodi.html">Proizvodi</a></li>
-                    <li><a href="/aboutUs/about.html">O Nama</a></li>
-                    <li><a href="kontakt/kontakt.html">Kontakt</a></li>
-                    <li><a href="account.html">Račun</a></li>
-                </ul>
-            </nav>
-            <img src="images/cart.png" width="30px" height="30px" alt="">
-            <div id="kosarica1">0</div>
-            <img src="images/menu.png" class="menu-icon" onclick="menuToggle()">
         </div>
-    </div>
+    </header>
     <div class="small-container">
         <div class="row row-2">
             <h2>Svi proizvodi</h2>

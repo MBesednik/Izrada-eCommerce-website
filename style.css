@@ -366,8 +366,9 @@ justify-content: space-between;
     text-align: center;
     padding: 20px 0;
     margin: auto;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    border-radius: 10px;
 }
 .form-container span{
     font-weight: bold;
@@ -393,6 +394,7 @@ form input{
     margin: 10px 0;
     padding: 0 10px;
     border: 1px solid #ccc;
+    border-radius: 15px;
 }
 form .btn{
     width: 100%;
@@ -402,6 +404,10 @@ form .btn{
 }
 form .btn:focus{
     outline: none;
+}
+#log a:hover{
+    color: #ff523b;
+    font-weight: 500;
 }
 #log{
     left: -300px  ;
