@@ -56,7 +56,6 @@
         <a href="" class="btn add-cart btn-purchase" onclick="reset()">Kupi</a>
     </div>
     <!-- Footer -->
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
@@ -161,22 +160,22 @@
                     }
                 }
 
-
                 let total_p = document.getElementById("total_p");
                 total_p.textContent = ukupna + ".00 kn";
             }
             kljucevi();
             aktiviraj();
             function reset() {
+                if (localStorage.getItem("total") == "0") {
+                    alert("Molimo Vas dodajte artikle u košaricu.");
+                }
+                else {
+                    alert("Hvala Vam na kupnji!");
+                }
+
                 localStorage.clear();
                 aktiviraj();
                 kljucevi();
-                if (localStorage) {
-                    alert("Prazna je košarica!");
-                }
-                else {
-                    alert("Hvala na kupnji!");
-                }
             }
         </script>
 </body>
