@@ -26,30 +26,6 @@ body{
     font-size: 30px;
     font-weight: 900;
 }
-/* .text{
-    font-size: 13px;
-    color: #545454;
-    line-height: 30px;
-    text-align: justify;
-    margin-bottom: 40px;
-} */
-/* .skills button{
-    font-size: 22px;
-    text-align: center;
-    letter-spacing: 2px;
-    border: none;
-    border-radius: 20px;
-    padding: 8px;
-    width: 200px;
-    background-color: #00999c;
-    color: white;
-    cursor: pointer;
-}
-.skills button:hover{
-    transition: 1s;
-    background-color: #ecf5f5;
-    color: #00999c;
-} */
 .btn{
     display: inline-block;
     text-align: center;
