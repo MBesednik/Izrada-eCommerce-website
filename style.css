@@ -583,7 +583,11 @@ form a{
     width: 150px;
     text-align: center;
 }
-
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* media query za manje od 1000 na detaljima proizvoda */
 @media only screen and (max-width: 1000px){
     .row{
