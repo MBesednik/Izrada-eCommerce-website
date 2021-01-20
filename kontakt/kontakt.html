@@ -14,6 +14,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <!-- PHP -->
+
   <title>Kontakt</title>
 </head>
 
@@ -90,29 +92,29 @@
           <span class="circle one"></span>
           <span class="circle two"></span>
 
-          <form action="index.html" autocomplete="off">
+          <form action="process.php" method="post">
             <h3 class="title" id="title2">Kontaktirajte nas:</h3>
             <div class="input-container">
-              <input type="text" name="name" class="input" />
+              <input type="text" name="UName" class="input" />
               <label for="">Ime i prezime</label>
               <span>Ime i prezime</span>
             </div>
             <div class="input-container">
-              <input type="email" name="email" class="input" />
+              <input type="email" name="Email" class="input" />
               <label for="">Email</label>
               <span>Email</span>
             </div>
             <div class="input-container">
-              <input type="tel" name="phone" class="input" />
-              <label for="">Broj telefona</label>
-              <span>Broj telefona</span>
+              <input type="text" name="Subject" class="input" />
+              <label for="">Naslov poruke</label>
+              <span>Naslov poruke</span>
             </div>
             <div class="input-container textarea">
-              <textarea name="message" class="input"></textarea>
+              <textarea name="msg" class="input"></textarea>
               <label for="">Poruka</label>
               <span>Poruka</span>
             </div>
-            <a href="#" class="btn" onclick="email()">Pošalji</a>
+            <a href="#" class="btn" name="btn-send" onclick="email()">Pošalji</a>
           </form>
         </div>
       </div>

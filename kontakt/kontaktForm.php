@@ -1,14 +1,23 @@
-<?php
-    $name = $_POST['name'];
-    $visitor_email = $_POST['email'];
-    $message = $_POST['message'];
+<?php 
 
-    $email_from = 'm.besednik69@gmail.com';
-    $email_subject = "New Form Submission";
-    $email_body = "User Name: $name.\n".
-                     "User Email: $visitor_email.\n".
-                        "User Message: $message.\n";
+    if(isset($_POST['btn-send']))
+    {
+       $UserName = $_POST['UName'];
+       $Email = $_POST['Email'];
+       $Subject = $_POST['Subject'];
+       $Msg = $_POST['msg'];
 
-    $to = "mateo.besednik@gmail.com";
-    $headers = "From: "
+       if(empty($UserName) || empty($Email) || empty($Subject) || empty($Msg))
+       {
+        alert("Molimo Vas da unesete podatke u polja.");
+       }
+       else
+       {
+           $to = "m.besednik69@gmail.com";
+
+           if(mail($to,$Subject,$Msg,$Email))
+           {
+            alert("Vaš email je poslan, odgovorit ćemo Vam u najkraćem roku.");
+        }
+       }
 ?>
